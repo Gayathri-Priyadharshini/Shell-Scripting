@@ -1,0 +1,39 @@
+========================================
+       LINUX SERVER HEALTH REPORT
+========================================
+Hostname       : ip-172-31-47-186
+Date           : Mon Nov  2 19:05:21 UTC 2026
+OS Information : Ubuntu 26.04.1 LTS
+Kernel Version : 7.0.0-1014-aws
+
+------------ UPTIME -------------------
+ 19:05:21 up 54 min,  2 users,  load average: 0.01, 0.02, 0.00
+
+------------ MEMORY -------------------
+               total        used        free      shared  buff/cache   available
+Mem:           908Mi       314Mi       368Mi       2.7Mi       334Mi       593Mi
+Swap:             0B          0B          0B
+
+------------ CPU LOAD -----------------
+ 0.01, 0.02, 0.00
+
+------------ DISK USAGE ---------------
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root        6.7G  2.7G  4.0G  41% /
+efivarfs         128K  3.3K  120K   3% /sys/firmware/efi/efivars
+/dev/nvme0n1p13  989M   98M  824M  11% /boot
+/dev/nvme0n1p15  105M  6.3M   99M   7% /boot/efi
+
+------------ DISK ALERTS --------------
+
+------------ TOP PROCESSES ------------
+    PID COMMAND         %CPU %MEM
+   1151 bash             0.1  0.3
+   1146 sshd-session     0.0  0.8
+   7972 fwupd            0.0  5.0
+      1 systemd          0.0  1.6
+    129 systemd-journal  0.0  3.3
+
+========================================
+       HEALTH CHECK COMPLETED
+========================================
