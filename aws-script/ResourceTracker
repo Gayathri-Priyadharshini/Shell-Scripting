@@ -1,0 +1,15 @@
+"i-0be96aa8411e1b702"
+{
+    "Functions": []
+}
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "gayu",
+            "UserId": "AIDA2BKMRYP4XSM655KI6",
+            "Arn": "arn:aws:iam::690039669753:user/gayu",
+            "CreateDate": "2026-10-29T06:42:36+00:00"
+        }
+    ]
+}

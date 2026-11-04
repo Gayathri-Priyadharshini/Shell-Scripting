@@ -15,15 +15,22 @@
 
 #########################
 
-# list s3 buckets
-aws s3 ls
+#To execute in debug mode (show commands)
+set -x
 
-# List EC2 instances
-aws ec2 describe-instances
+# list s3 buckets
+echo "Print list of S3 buckets"
+aws s3 ls >> ResourceTracker
+
+# List EC2 instances using jq
+echo "Print list of Instances"
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId' >> ResourceTracker
 
 # List Lambda 
-aws lambda list-functions
+echo "Print list of Lambda functions"
+aws lambda list-functions >> ResourceTracker
 
 # List IAM users
-aws iam list-users
+echo "Print list of IAM users"
+aws iam list-users >> ResourceTracker
 
